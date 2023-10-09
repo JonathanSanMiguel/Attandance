@@ -6,10 +6,6 @@ const mongoose = require("mongoose");
 const Attendance = mongoose.model(
   "Asistencia",
   new mongoose.Schema({
-    date: {
-      type: Date,
-      default: Date.now
-    },
     group:
     {
       type: mongoose.Schema.Types.ObjectId,
@@ -31,6 +27,9 @@ const Attendance = mongoose.model(
         ref: "Alumno"
       }
     ],
+  },
+  {
+    timestamps: true,
   })
 );
 

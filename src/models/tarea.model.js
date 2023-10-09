@@ -21,11 +21,10 @@ const Task = mongoose.model(
       },
     title: String,
     description: String,
-    date: {
-      type: Date,
-      default: Date.now
-    },
     CloseDate: Date
+  },
+  {
+    timestamps: true,
   })
 );
 

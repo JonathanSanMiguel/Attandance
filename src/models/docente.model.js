@@ -41,6 +41,9 @@ const User = mongoose.model(
       type: Number,
       default: 1
     },
+  },
+  {
+    timestamps: true,
   })
 );
 

@@ -22,6 +22,9 @@ const Group = mongoose.model(
         ref: "Alumno"
       }
     ],
+  },
+  {
+    timestamps: true,
   })
 );
 

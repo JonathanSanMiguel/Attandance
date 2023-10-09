@@ -11,20 +11,21 @@ const Alumn = mongoose.model(
     name: String,
     lastName: String,
     gender: String,
-    group: 
-      {
+    group: {
         type: mongoose.Schema.Types.ObjectId,
         ref: "Grupo"
       },
-    roles:
-      {
+    roles: {
         type: mongoose.Schema.Types.ObjectId,
         ref: "Rol"
       },
     status: { // 1 = active, 2 = inactive, 3 = suspedido
-      type: Number,
-      default: 1
-    }, 
+        type: Number,
+        default: 1
+      },
+  },
+  {
+    timestamps: true,
   })
 );
 
